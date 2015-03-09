@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ButtonClicks</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_title">Button Clicks!</string>
+    <string name="btn_buttonOne">Button 1</string>
+    <string name="btn_buttonTwo">Button 2</string>
+
+</resources>

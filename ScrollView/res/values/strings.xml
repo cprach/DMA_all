@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ScrollView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_title">Main Activity</string>
+    <string name="btn_one">Button One</string>
+    <string name="btn_two">Button Two</string>
+    <string name="btn_three">Button Three</string>
+    <string name="btn_four">Button Four</string>
+    <string name="btn_five">Button five</string>
+
+</resources>
