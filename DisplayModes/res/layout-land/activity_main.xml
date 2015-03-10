@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent" 
+    android:layout_margin="10dp" >
 
     <TableRow>
 
@@ -12,7 +13,8 @@
 
         <EditText
             android:layout_width="150dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_email" />
 
         <TextView
             android:layout_width="20dp"
@@ -26,7 +28,8 @@
         <EditText
             android:layout_width="125dp"
             android:layout_height="wrap_content"
-            android:password="true" />
+            android:hint="@string/hint_password"
+            android:inputType="textPassword" />
     </TableRow>
 
     <TableRow>
