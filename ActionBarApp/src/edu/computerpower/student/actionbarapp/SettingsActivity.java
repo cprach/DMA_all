@@ -1,4 +1,6 @@
-package com.cp.dma.actionbarapp;
+package edu.computerpower.student.actionbarapp;
+
+import com.cp.dma.actionbarapp.R;
 
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;

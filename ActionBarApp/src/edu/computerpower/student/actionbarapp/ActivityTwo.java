@@ -1,4 +1,6 @@
-package com.cp.dma.actionbarapp;
+package edu.computerpower.student.actionbarapp;
+
+import com.cp.dma.actionbarapp.R;
 
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
@@ -30,7 +32,7 @@ public class ActivityTwo extends ActionBarActivity {
         int id = item.getItemId();
         switch (id) {
         case R.id.action_activity_main:
-        	intent = new Intent(this, ActivityTwo.class);
+        	intent = new Intent(this, MainActivity.class);
         	startActivity(intent);
         	return true;
         case R.id.action_settings:
