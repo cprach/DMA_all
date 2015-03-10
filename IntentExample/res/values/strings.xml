@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IntentExample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activityOne">Main Activity</string>
+    <string name="title_activityTwo">Activity Two</string>
+    <string name="btn_goToActivityTwo">Go to Activity Two</string>
+    <string name="btn_goToMainActivity">Go to Main Activity</string>
+    <string name="title_activity_activity_two">ActivityTwo</string>
+
+</resources>
