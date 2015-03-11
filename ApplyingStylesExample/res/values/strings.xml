@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ApplyingStylesExample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_txtOne">This is a style</string>
+    <string name="label_txtTwo">This is another style</string>
+    <string name="label_txtThree">Yep, another style</string>
+    <string name="label_txtFour">This is the same style as the first one!</string>
+
+</resources>
