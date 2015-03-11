@@ -12,37 +12,50 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:text="@string/label_main_title" />
+        android:layout_marginBottom="25dp"
+        android:text="@string/label_main_title"
+        android:textSize="26sp" />
 
-    <TextView
-        android:id="@+id/txtUsernameLabel"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
-        android:text="@string/txtUsernameLabel" />
+        android:orientation="horizontal" >
 
-    <TextView
-        android:id="@+id/txtUsername"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/txtUsernameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/txtUsernameLabel" />
+
+        <TextView
+            android:id="@+id/txtUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
-        android:text="@string/empty" />
+        android:orientation="horizontal" >
 
-    <TextView
-        android:id="@+id/txtResetUsernameLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:text="@string/txtResetUsernameLabel" />
+        <TextView
+            android:id="@+id/txtResetUsernameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/txtResetUsernameLabel" />
 
-    <EditText
-        android:id="@+id/editResetUsername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:hint="@string/hintResetUsernameLabel"
-        android:inputType="text" />
+        <EditText
+            android:id="@+id/editResetUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintResetUsernameLabel"
+            android:inputType="text" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnSave"
