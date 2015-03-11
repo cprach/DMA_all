@@ -1,5 +1,6 @@
-package edu.computerpower.student.dma_android_themes;
+package edu.computerpower.student.themes;
 
+import edu.computerpower.student.dma_android_themes.R;
 import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
 import android.content.Intent;
@@ -24,9 +25,9 @@ public class PreferencesActivity extends ActionBarActivity {
 	}
 
 	public void closePreferences(View view) {
-		
+
 		Intent intent = new Intent(this, MainActivity.class);
-		
+
 		if (selectedResourceId != 0) {
 			intent.putExtra("themeid", selectedResourceId);
 		}
@@ -78,3 +79,5 @@ public class PreferencesActivity extends ActionBarActivity {
 		return super.onOptionsItemSelected(item);
 	}
 }
+
+

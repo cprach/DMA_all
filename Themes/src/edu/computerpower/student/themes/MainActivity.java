@@ -1,5 +1,6 @@
-package edu.computerpower.student.dma_android_themes;
+package edu.computerpower.student.themes;
 
+import edu.computerpower.student.dma_android_themes.R;
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.os.Bundle;
