@@ -13,6 +13,7 @@ public class MainActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		
 		super.onCreate(savedInstanceState);
 		
 		int themeResourceId = getIntent().getIntExtra("themeid", 0);
