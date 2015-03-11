@@ -17,12 +17,6 @@
 
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
 
-        <item name="android:typeface">monospace</item>
-    </style>
-
-    <style name="MySpecialStyle">
-        <item name="android:typeface">serif</item>
-        <item name="android:padding">10dp</item>
     </style>
 
     <style name="WhiteTheme" parent="@style/AppTheme">

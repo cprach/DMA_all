@@ -16,8 +16,7 @@
         android:id="@+id/txtSelectedTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/empty"
-        style="@style/MySpecialStyle" />
+        android:text="@string/empty" />
 
     <Button
         android:id="@+id/btnSetWhiteTheme"
