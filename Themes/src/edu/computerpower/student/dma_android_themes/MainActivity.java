@@ -1,16 +1,30 @@
 package edu.computerpower.student.dma_android_themes;
 
 import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		int themeResourceId = getIntent().getIntExtra("themeid", 0);
+		if (themeResourceId != 0) {
+			setTheme(themeResourceId);
+		}
+		
 		setContentView(R.layout.activity_main);
+	}
+	
+	public void openPreferences(View view) {
+		Intent intent = new Intent(this, PreferencesActivity.class);
+		startActivity(intent);
 	}
 
 	@Override

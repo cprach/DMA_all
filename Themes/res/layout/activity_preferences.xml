@@ -9,13 +9,15 @@
         android:id="@+id/txtActivityLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="24sp"
         android:text="@string/title_activity_set_theme" />
     
     <TextView
         android:id="@+id/txtSelectedTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/empty" />
+        android:text="@string/empty"
+        style="@style/MySpecialStyle" />
 
     <Button
         android:id="@+id/btnSetWhiteTheme"
@@ -37,5 +39,12 @@
         android:layout_height="wrap_content"
         android:text="@string/label_set_red_theme"
         android:onClick="setActivityTheme" />
+    
+        <Button
+        android:id="@+id/btnClosePrefs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_close_prefs"
+        android:onClick="closePreferences" />
 
 </LinearLayout>

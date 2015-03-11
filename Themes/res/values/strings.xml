@@ -5,9 +5,12 @@
     <string name="hello_world">Theme.AppCompat.Light.DarkActionBar</string>
     <string name="action_settings">Settings</string>
     <string name="empty">empty</string>
+    <string name="title_main_activity">Main Activity</string>
     <string name="title_activity_set_theme">Set the theme!</string>
-    <string name="label_set_white_theme">Set white theme</string>
-    <string name="label_set_blue_theme">Set blue theme</string>
-    <string name="label_set_red_theme">Set red theme</string>
+    <string name="label_set_white_theme">Set white text theme</string>
+    <string name="label_set_blue_theme">Set blue text theme</string>
+    <string name="label_set_red_theme">Set red text theme</string>
+    <string name="btn_open_prefs">Open preferences</string>
+    <string name="btn_close_prefs">Close preferences</string>
 
 </resources>
