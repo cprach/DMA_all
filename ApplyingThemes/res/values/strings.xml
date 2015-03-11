@@ -7,5 +7,6 @@
     <string name="label_txtOne">This is a style</string>
     <string name="label_txtTwo">This is another style</string>
     <string name="label_txtThree">Yep, another style</string>
+    <string name="label_txtFour">This is the same style as the first one!</string>
 
 </resources>
