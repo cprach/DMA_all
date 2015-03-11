@@ -8,7 +8,7 @@ import com.google.gson.annotations.SerializedName;
 public class Rain {
 
 	@SerializedName("3h")
-	private Integer _3h;
+	private double _3h;
 	private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
 	/**
@@ -16,7 +16,7 @@ public class Rain {
 	 * @return
 	 * The _3h
 	 */
-	public Integer get3h() {
+	public double get3h() {
 		return _3h;
 	}
 
@@ -25,7 +25,7 @@ public class Rain {
 	 * @param _3h
 	 * The 3h
 	 */
-	public void set3h(Integer _3h) {
+	public void set3h(double _3h) {
 		this._3h = _3h;
 	}
 
