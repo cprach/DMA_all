@@ -23,21 +23,7 @@ public class AboutActivity extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// View customizations must occur before the View is set.		
-		//customiseView();
 		setContentView(R.layout.activity_about);
-	}
-
-	private void customiseView() {
-		if (getSharedPreferences(PREFSNAME,PREF_MODE_PRIVATE).getString(PREFKEY_TEXTCOLOR, PREFKEYCHECK).equals(TEXT_WHITE)) {
-			setTheme(R.style.WhiteTheme);
-		} else if (getSharedPreferences(PREFSNAME,PREF_MODE_PRIVATE).getString(PREFKEY_TEXTCOLOR, PREFKEYCHECK).equals(TEXT_BLUE)) {
-			setTheme(R.style.BlueTheme);
-		} else if (getSharedPreferences(PREFSNAME,PREF_MODE_PRIVATE).getString(PREFKEY_TEXTCOLOR, PREFKEYCHECK).equals(TEXT_RED)) {
-			setTheme(R.style.RedTheme);
-		} else {
-			setTheme(R.style.WhiteTheme);
-		}
 	}
 
 	@Override

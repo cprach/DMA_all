@@ -295,7 +295,7 @@ public class GetWeatherActivity extends ActionBarActivity {
 
 			if (result == "" | result == null) {
 				result = readTextFile();
-				Log.d(">> NO RESULT >>> ", "Perhaps no network available. Reading from text file instead FEWL");
+				Log.d(">> NO RESULT >>> ", "Perhaps no network available. Reading from text file instead DATA IS OLD");
 			}
 
 			progressBar.setProgress(0);
@@ -311,7 +311,6 @@ public class GetWeatherActivity extends ActionBarActivity {
 	public String readTextFile() {
 		InputStream inputStream = getResources().openRawResource(R.raw.testjsonfeb4melbimperial);
 		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-		//byte[] b = null;
 		int i;
 		try {
 			i = inputStream.read();

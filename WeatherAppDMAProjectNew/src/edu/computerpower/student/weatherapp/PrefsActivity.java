@@ -38,23 +38,10 @@ public class PrefsActivity extends ActionBarActivity implements OnItemSelectedLi
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// View customizations must occur before the View is set.		
-		//customiseView();
 		setContentView(R.layout.activity_prefs);
+
 		intitialiseSpinners();
 		populateLabels();
-	}
-
-	private void customiseView() {
-		if (getSharedPreferences(PREFSNAME,PREF_MODE_PRIVATE).getString(PREFKEY_TEXTCOLOR, PREFKEYCHECK).equals(TEXT_WHITE)) {
-			setTheme(R.style.WhiteTheme);
-		} else if (getSharedPreferences(PREFSNAME,PREF_MODE_PRIVATE).getString(PREFKEY_TEXTCOLOR, PREFKEYCHECK).equals(TEXT_BLUE)) {
-			setTheme(R.style.BlueTheme);
-		} else if (getSharedPreferences(PREFSNAME,PREF_MODE_PRIVATE).getString(PREFKEY_TEXTCOLOR, PREFKEYCHECK).equals(TEXT_RED)) {
-			setTheme(R.style.RedTheme);
-		} else {
-			setTheme(R.style.WhiteTheme);
-		}
 	}
 
 	@Override
@@ -123,8 +110,10 @@ public class PrefsActivity extends ActionBarActivity implements OnItemSelectedLi
 		txtCurrentCityName.setText(getSharedPreferences(PREFSNAME,PREF_MODE_PRIVATE).getString(PREFKEY_CITY, DEFAULT_CITY_MELBOURNE));
 		txtCurrentMeasurementTypeName.setText(getSharedPreferences(PREFSNAME,PREF_MODE_PRIVATE).getString(PREFKEY_MEASUREMENTTYPE, DEFAULT_MEASUREMENTTYPE_METRIC));
 		txtCurrentTextColorName.setText(getSharedPreferences(PREFSNAME,PREF_MODE_PRIVATE).getString(PREFKEY_TEXTCOLOR, TEXT_WHITE));
+		log("txtCurrentCityName " + txtCurrentCityName.getText().toString());
+
 	}
-	
+
 	public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
 		if (pos > 0) { // If a selection has been made.
 			TextView txtCurrentCityName = (TextView)findViewById(R.id.txtCurrentCityName);
@@ -132,7 +121,6 @@ public class PrefsActivity extends ActionBarActivity implements OnItemSelectedLi
 			TextView txtCurrentTextColorName = (TextView)findViewById(R.id.txtCurrentTextColorName);
 
 			String selection = (String)parent.getItemAtPosition(pos);
-			//Spinner spinner = (Spinner)parent;
 
 			if (parent.getId() == R.id.cities_spinner) {
 				txtCurrentCityName.setText(selection);
@@ -143,29 +131,32 @@ public class PrefsActivity extends ActionBarActivity implements OnItemSelectedLi
 			if (parent.getId() == R.id.textcolor_spinner) {
 				txtCurrentTextColorName.setText(selection);
 			}
+			
+			log("txtCurrentCityName " + txtCurrentCityName.getText().toString());
+
 		}
 	}
 
-//	public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
-//		if (pos > 0) { // If a selection has been made.
-//			TextView txtCurrentCityName = (TextView)findViewById(R.id.txtCurrentCityName);
-//			TextView txtCurrentMeasurementTypeName = (TextView)findViewById(R.id.txtCurrentMeasurementTypeName);
-//			TextView txtCurrentTextColorName = (TextView)findViewById(R.id.txtCurrentTextColorName);
-//
-//			String selection = (String)parent.getItemAtPosition(pos);
-//			Spinner spinner = (Spinner)parent;
-//
-//			if (spinner.getId() == R.id.cities_spinner) {
-//				txtCurrentCityName.setText(selection);
-//			}
-//			if (spinner.getId() == R.id.units_spinner) {
-//				txtCurrentMeasurementTypeName.setText(selection);
-//			}
-//			if (spinner.getId() == R.id.textcolor_spinner) {
-//				txtCurrentTextColorName.setText(selection);
-//			}
-//		}
-//	}
+	//	public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+	//		if (pos > 0) { // If a selection has been made.
+	//			TextView txtCurrentCityName = (TextView)findViewById(R.id.txtCurrentCityName);
+	//			TextView txtCurrentMeasurementTypeName = (TextView)findViewById(R.id.txtCurrentMeasurementTypeName);
+	//			TextView txtCurrentTextColorName = (TextView)findViewById(R.id.txtCurrentTextColorName);
+	//
+	//			String selection = (String)parent.getItemAtPosition(pos);
+	//			Spinner spinner = (Spinner)parent;
+	//
+	//			if (spinner.getId() == R.id.cities_spinner) {
+	//				txtCurrentCityName.setText(selection);
+	//			}
+	//			if (spinner.getId() == R.id.units_spinner) {
+	//				txtCurrentMeasurementTypeName.setText(selection);
+	//			}
+	//			if (spinner.getId() == R.id.textcolor_spinner) {
+	//				txtCurrentTextColorName.setText(selection);
+	//			}
+	//		}
+	//	}
 
 	@Override
 	public void onNothingSelected(AdapterView<?> arg0) {
@@ -187,9 +178,9 @@ public class PrefsActivity extends ActionBarActivity implements OnItemSelectedLi
 				+ ", " + txtCurrentMeasurementTypeName.getText() + ", " 
 				+ txtCurrentTextColorName.getText(), Toast.LENGTH_SHORT).show();
 
-		finish();
-		Intent i = new Intent(this, this.getClass());
-		this.startActivity(i);
+		//		finish();
+		//		Intent i = new Intent(this, this.getClass());
+		//		this.startActivity(i);
 	}
 
 	public void closePrefs(View view) {
